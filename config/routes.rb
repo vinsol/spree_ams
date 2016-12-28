@@ -6,7 +6,10 @@ Spree::Core::Engine.routes.draw do
       resources :products
       resources :line_items
       resources :orders do
-        get :mine, on: :collection
+        collection do
+          get :mine
+          get :current
+        end
         put :empty, on: :member
       end
       resources :taxonomies

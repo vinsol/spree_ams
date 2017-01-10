@@ -5,10 +5,16 @@ module Spree
         include Serializable
         include Requestable
 
-        def order_id
-          super || params[:id]
+        def mine
+          super
+          respond_with @orders
         end
 
+        private
+
+          def order_id
+            super || params[:id]
+          end
       end
     end
   end

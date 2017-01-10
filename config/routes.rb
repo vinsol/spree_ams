@@ -5,7 +5,13 @@ Spree::Core::Engine.routes.draw do
 
       resources :products
       resources :line_items
-      resources :orders
+      resources :orders do
+        collection do
+          get :mine
+          get :current
+        end
+        put :empty, on: :member
+      end
       resources :taxonomies
       resources :taxons
       resources :countries, :only => [:index, :show]

@@ -12,7 +12,6 @@ module Spree
                 :completed_at,
                 :ship_address_id,
                 :payment_total,
-                :shipping_method_id,
                 :shipment_state,
                 :payment_state,
                 :email,

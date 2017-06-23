@@ -5,7 +5,7 @@ module Spree
         extend ActiveSupport::Concern
 
         included do
-          prepend_before_filter :set_access_control_headers
+          prepend_before_action :set_access_control_headers
         end
 
         private

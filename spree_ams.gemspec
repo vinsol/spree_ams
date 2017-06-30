@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.description = 'This gem allows Spree to respond as per the Active Model Serializers gem, while keeping the original api intact.'
   s.required_ruby_version = '>= 2.2.2'
 
-  s.author    = ['Hugh Francis', 'Shubham Gupta']
-  s.email     = 'info@vinsol.com'
+  s.author    = ['Hugh Francis']
+  s.email     = ['info@vinsol.com', 'me@hughfrancis.me']
   s.homepage  = 'http://vinsol.com'
 
   #s.files       = `git ls-files`.split("\n")

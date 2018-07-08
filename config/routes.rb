@@ -20,6 +20,7 @@ Spree::Core::Engine.routes.draw do
       resources :checkouts, only: [:update] do
         member do
           put :next
+          put :back_to_state
         end
       end
 
